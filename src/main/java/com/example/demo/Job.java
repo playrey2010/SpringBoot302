@@ -14,15 +14,15 @@ public class Job {
     private long id;
 
     @NotNull
-    @Size(min = 4)
+    @Size(min = 3, message = "Title must be at least 3 characters long.")
     private String title;
 
     @NotNull
-    @Size(min = 3)
+    @Size(min = 3, message = "Employer must be at least 3 characters long.")
     private String employer;
 
     @NotNull
-    @Size(min = 10)
+    @Size(min = 10, message = "Description must be at least 10 characters long.")
     private String description;
 
     public long getId() {
